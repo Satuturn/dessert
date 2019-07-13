@@ -1,0 +1,36 @@
+mixin product(img, title, p)
+    .product
+        img(src=img)
+        h2=title
+        p=p
+
+<!DOCTYPE html>
+html(lang="zh")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="style.css")
+        title DessertHolic - index
+    body
+        .banner
+            ul
+                li 連結文字
+                li 連結文字
+                li 連結文字
+                li DessertHolic
+        .content
+            .about
+                .text
+                    h1 熱門商品
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit.          
+                .pic
+                    img(src="image/cake1.png", alt="杯子蛋糕")
+            +product("image/cake2.png", "人氣甜點A", "可口又美味的蛋糕")  
+            +product("image/cake3.png", "人氣甜點B", "可口又美味的蛋糕")
+            +product("image/cake4.png", "人氣甜點C", "可口又美味的蛋糕")
+
+            footer
+                img(src="image/icon.png", alt="甜點圖示")
+                div DessertHolic &copy; TUTU 201907
+
