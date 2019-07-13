@@ -1,6 +1,10 @@
 @import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
 * {
-  border: 0.5px solid rgba(0, 0, 0, 0.781);
+  border: 0.5px solid rgba(0, 0, 0, 0) !important;
+}
+
+body {
+  background-color: #ffdff7;
 }
 
 .banner {
@@ -12,7 +16,7 @@
   position: relative;
 }
 
-ul {
+.banner ul {
   height: 100px;
   width: 800px;
   text-align: left;
@@ -20,21 +24,27 @@ ul {
   padding: 82px 0 0 0;
 }
 
-ul li {
+.banner ul li {
   display: inline-block;
   font-size: 30px;
   color: #87716f;
 }
 
-ul li a {
+.banner ul li a {
   color: #87716f;
   text-decoration: none;
   padding: 20px;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+.banner ul li a:hover {
+  color: #000000;
 }
 
 .logo {
   font-size: 80px;
-  font-weight: 800;
+  font-weight: 500;
   margin: 574px 0 0 0;
   color: #87716f;
   position: absolute;
@@ -45,5 +55,77 @@ ul li a {
 .logo a {
   color: #87716f;
   text-decoration: none;
+  -webkit-transition: color .4s ease;
+  transition: color .4s ease;
+}
+
+.logo a:hover {
+  color: white;
+}
+
+.content {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 167px;
+}
+
+.content .about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 50px;
+}
+
+.content .about h1 {
+  font-size: 36px;
+  color: #87716f;
+  margin-top: 115px;
+  text-align: center;
+}
+
+.content .about p {
+  font-size: 18px;
+  color: #87716f;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.content .productBox {
+  margin-top: 191px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 109px;
+}
+
+.content .productBox .product img {
+  width: 100%;
+}
+
+.content .productBox .product h2 {
+  font-size: 30px;
+  color: #87716f;
+  margin: 44px 0 0 0;
+  text-align: center;
+}
+
+.content .productBox .product p {
+  font-size: 18px;
+  color: #87716f;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.content footer {
+  text-align: center;
+  margin: 130px 0 50px 0;
+}
+
+.content footer div {
+  margin-top: 100px;
+  font-size: 18px;
+  font-weight: 200px;
 }
 /*# sourceMappingURL=style.css.map */
