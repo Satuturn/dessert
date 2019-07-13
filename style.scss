@@ -52,11 +52,13 @@ body{
     position: absolute;
     bottom: 110px;
     left: 157px;
+    font-family: 'DM Serif Display', serif;
 
     a { 
         color: #87716f;
         text-decoration: none;
         transition:  color .4s ease;
+        
 
         &:hover{
             color: white;
